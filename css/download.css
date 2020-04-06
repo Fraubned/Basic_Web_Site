@@ -1,0 +1,35 @@
+#download-back {
+    border-top: 20px inset #500D16;
+    height: 600px;
+    background: url('../img/sign_back3.jpg');
+    background:linear-gradient(
+        rgba(1,1,1,1),
+        rgba(0,0,0,1),
+    );
+    background-attachment: fixed;
+    transition: all .5s ease;
+    background-size: cover;
+    background-position: center;
+    text-align: center
+}
+
+#download-back h1 {
+    color: #95a5a6;
+}
+
+
+.download {
+    float: left;
+    flex-grow: 1;
+    width: 50%;
+    padding: 100px 100px;
+    text-align: center;
+    
+}
+
+.download .fa {
+    font-size: 50px;
+    color: #95a5a6;
+    line-height: 50px;
+    transition: .3s ease;
+}

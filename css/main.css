@@ -1,0 +1,364 @@
+/*General Settings*/
+
+@font-face {
+    font-family: 'Times New Roman', Times, serif;
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+body 
+{
+    background-color:white;
+    color:#3f3f3f;
+    font: 14px/28px;
+    font-family: 'Raleway', arial;
+}
+/* Scroll-Bar gizlemek için*/
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+
+h1
+{
+    font-size: 52px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.sectionHeader {
+    background: #500D16;
+    border-bottom:  1px solid #000;
+    height: 60px;
+    color: #fff;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 24px;
+    padding: 5px 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+
+}
+
+.sanatcilarHeader{
+    background: #500D16;
+    border-bottom:  5px solid #000;
+    height: 60px;
+    color: #fff;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 24px;
+    padding: 5px 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+h3 {
+    font-size: 16px;
+    color: #500D16;
+    font-weight: bold;
+}
+
+.sectionArea {
+    padding: 80px 0;
+
+}
+.sectionArea-ex {
+    padding: 20px 0;
+    height: 200px;
+}
+
+/*Grid Settings*/
+
+.container
+{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.features {
+    background: url('../img/f_b_2.jpg') center center no-repeat;
+}
+
+.featuresBody .container {
+    justify-content: space-between;
+}
+
+.col3{
+    flex-grow: 1;
+    width: 33.33%;
+    padding: 20px;
+}
+
+
+
+/*Home Settings*/
+
+header .logo
+{
+    margin-right: auto;
+}
+
+header .logo img{
+    display: block;
+    height: 70px;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    padding: 27px 17px;
+    display: block;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #333;
+    transition: all .5s ease;
+}
+
+.menu li:hover a {
+    background: #500D16;
+    color: #fff;
+}
+
+#mainSlider {
+    height: 500px;
+    margin-right: 100px;
+    background: url('../img/f_b_2.jpg') center center no-repeat;
+    background:linear-gradient(
+        rgba(0,0,0,.7),
+        rgba(0,0,0,.7),
+    );
+    background-attachment: fixed;
+    transition: all .5s ease;
+    background-size: cover;
+    border-top: 20px inset #500D16;
+}
+
+.slider {
+    width: 100%;
+}
+
+#mainCaption {
+    height: 500px;
+}
+
+.caption {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    color:#ffff;
+}
+
+.featuresTop {
+    text-align: center;
+}
+
+.item{
+    position: relative;
+    width: 100%;
+    border: 5px inset #500D16;
+}
+
+.imageOver{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overLay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(80, 13, 22, .7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.item:hover .overLay {
+    width: 100%;
+}
+
+.itemText{
+    white-space: nowrap;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#misyon {
+    border-top: 20px inset rgb(160, 160, 160);
+    height: 500px;
+    background: url('../img/back2.jpg');
+    background:linear-gradient(
+        rgba(0,0,0,.7),
+        rgba(0,0,0,.7),
+    );
+    transition: all .5s ease;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#misyon p{
+    padding: 10px 20px;
+    font-size: 24px;
+    color: #fff;
+    text-align: left;
+}
+
+
+#vizyon {
+    border-top: 20px inset rgb(160, 160, 160);
+    height: 500px;
+    background: url('../img/back3.jpg');
+    background:linear-gradient(
+        rgba(0,0,0,.7),
+        rgba(0,0,0,.7),
+    );
+    transition: all .5s ease;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#vizyon p{
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 24px;
+    color: #fff;
+}
+
+footer {
+    background: #500D16;
+    text-align: center;
+    height: 300px;
+}
+
+footer h3{
+    font-size: 24px;
+    padding: 10px;
+    color: #fff;
+}
+
+footer .fa {
+    font-size: 30px;
+    color: #95a5a6;
+    line-height: 50px;
+    transition: .3s ease;
+}
+
+footer .fa:hover {
+    color: #fff;
+}
+
+footer p {
+    color: #95a5a6;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.footerLinks li {
+    line-height: 30px;
+}
+
+.footerLinks a{
+    text-decoration: none;
+    color: #95a5a6;
+    letter-spacing: 2px;
+    transition: .3s ease;
+}
+
+.footerLinks a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.socialLinks li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+
+/*
+.col3 {
+    padding: 10px 20px;
+}
+
+#sanatcilar{
+    border: 5px solid #500D16;
+}
+
+.item {
+     position: relative;
+     overflow: hidden;
+     display: inline-block;
+     width: 100%;
+     vertical-align: top;
+}
+
+.zoom img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all .5s ease;
+}
+
+.item .itemText {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #500D16;
+}
+
+.item:hover .zoom img {
+    transform: scale(0.90);
+}
+
+.item:hover h3 {
+    color: #fff;
+}
+
+.item:hover .itemText {
+    background: #500D16;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.itemText p {
+    margin: 20px 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
